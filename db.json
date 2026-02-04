@@ -1,0 +1,99 @@
+{
+  "ambulances": [
+    {
+      "id": "AMB001",
+      "callSign": "Unit 1",
+      "status": "Available",
+      "location": { "lat": 40.7128, "lng": -74.0060 },
+      "crew": ["John Smith", "Sarah Johnson"],
+      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Monitor"],
+      "responseTime": 5,
+      "incidents": 12
+    },
+    {
+      "id": "AMB002",
+      "callSign": "Unit 2",
+      "status": "Busy",
+      "location": { "lat": 40.7282, "lng": -73.7949 },
+      "crew": ["Mike Davis", "Emma Wilson"],
+      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Monitor"],
+      "responseTime": 8,
+      "incidents": 18
+    },
+    {
+      "id": "AMB003",
+      "callSign": "Unit 3",
+      "status": "Available",
+      "location": { "lat": 40.7489, "lng": -73.9680 },
+      "crew": ["Alex Chen", "Lisa Anderson"],
+      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Monitor"],
+      "responseTime": 4,
+      "incidents": 15
+    },
+    {
+      "id": "AMB004",
+      "callSign": "Unit 4",
+      "status": "Maintenance",
+      "location": { "lat": 40.6892, "lng": -74.0445 },
+      "crew": ["Robert Taylor", "Jennifer Lee"],
+      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Monitor"],
+      "responseTime": 0,
+      "incidents": 10
+    },
+    {
+      "id": "AMB005",
+      "callSign": "Unit 5",
+      "status": "Available",
+      "location": { "lat": 40.7549, "lng": -73.9840 },
+      "crew": ["David Martinez", "Rachel Brown"],
+      "equipment": ["Defibrillator", "Oxygen", "Stretcher", "Monitor"],
+      "responseTime": 6,
+      "incidents": 20
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC001",
+      "address": "123 Main St, New York, NY",
+      "location": { "lat": 40.7128, "lng": -74.0060, "address": "123 Main St, New York, NY" },
+      "patient": "John Doe",
+      "severity": "High",
+      "status": "In Progress",
+      "assignedAmbulance": "AMB001",
+      "createdAt": "2024-02-04T10:30:00Z",
+      "notes": "Traffic accident, patient conscious"
+    },
+    {
+      "id": "INC002",
+      "address": "456 Park Ave, New York, NY",
+      "location": { "lat": 40.7549, "lng": -73.9840, "address": "456 Park Ave, New York, NY" },
+      "patient": "Jane Smith",
+      "severity": "Critical",
+      "status": "Pending",
+      "createdAt": "2024-02-04T10:45:00Z",
+      "notes": "Cardiac emergency, immediate response needed"
+    },
+    {
+      "id": "INC003",
+      "address": "789 Broadway, New York, NY",
+      "location": { "lat": 40.7489, "lng": -73.9680, "address": "789 Broadway, New York, NY" },
+      "patient": "Robert Johnson",
+      "severity": "Medium",
+      "status": "Completed",
+      "assignedAmbulance": "AMB003",
+      "createdAt": "2024-02-04T09:15:00Z",
+      "completedAt": "2024-02-04T10:00:00Z",
+      "notes": "Minor injury, transported to hospital"
+    },
+    {
+      "id": "INC004",
+      "address": "321 5th Ave, New York, NY",
+      "location": { "lat": 40.7282, "lng": -73.7949, "address": "321 5th Ave, New York, NY" },
+      "patient": "Emily Davis",
+      "severity": "Low",
+      "status": "Pending",
+      "createdAt": "2024-02-04T10:50:00Z",
+      "notes": "Fall injury, patient stable"
+    }
+  ]
+}
